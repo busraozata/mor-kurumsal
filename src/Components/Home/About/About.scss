@@ -1,0 +1,70 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.about {
+    padding: 8rem 1rem;
+    .title {
+        margin-bottom: 5rem;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            width: 43%;
+            height: 0.2rem;
+            background-color: var(--color-purple);
+        }
+    }
+    .right-area {
+        padding-left: 8rem;
+        h3 {
+            margin-top: 0;
+            margin-bottom: 1.3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: left;
+            position: relative;
+            
+        }
+
+        p {
+            color: var(--color-black);
+            font-weight: 300;
+            span {
+                font-weight: 700;
+                display: block;
+                max-width: 30rem;
+                margin-bottom: 0.5rem;
+            }
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+        }
+        .btn {
+            padding-left: 0rem;
+            color: var(--color-purple);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            border: none !important;
+
+            &:hover {
+                svg {
+                    margin-left: 1rem;
+                }
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            svg {
+                display: block;
+                margin-left: 0.6rem;
+                transition: 0.3s all;
+            }
+        }
+    }
+}

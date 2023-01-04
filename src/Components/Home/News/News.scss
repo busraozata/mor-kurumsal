@@ -1,0 +1,77 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+.news {
+    position: relative;
+    background-color: var(--color-bg-gray);
+    padding: 8rem 0rem;
+    overflow: hidden !important;
+    .title-area {
+        margin-bottom: 5rem;
+        .title {
+            margin-bottom: 2rem;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -0.9rem;
+                width: 43%;
+                height: 0.2rem;
+                background-color: var(--color-purple);
+            }
+        }
+        p {
+            max-width: 40rem;
+            color: var(--color-black);
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+   
+    .swiper {
+        overflow: unset !important;
+    }
+    .swiper-slide {
+        background-color: var(--color-white);
+        padding: 2rem;
+        span {
+            color: var(--color-purple);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        p {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            color: var(--color-black);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        .btn {
+            padding-left: 0rem;
+            color: var(--color-purple);
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            border: none !important;
+            &:hover {
+                svg {
+                    margin-left: 1rem;
+                }
+            }
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            svg {
+                display: block;
+                margin-left: 0.6rem;
+                transition: 0.3s all;
+            }
+        }
+    }
+}

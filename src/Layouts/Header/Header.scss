@@ -1,0 +1,210 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+header {
+    background-color: var(--color-white);
+    padding: 1rem 6rem 1rem 6rem !important;
+    position: relative;
+    transition: 0.3s all;
+    &.sticky {
+        position: sticky;
+        top: 0;
+        z-index: 9999999;
+        transition: 0.3s all;
+        padding: 0.1rem 6rem !important;
+        .header-inner {
+            .img-wrapper {
+                img {
+                    max-width: 10rem;
+                }
+            }
+        }
+        /*  @media screen and (max-width: 1440px) {
+            padding: 0.1rem 2rem;
+        }
+        @media screen and (max-width: $lg-breakpoint) {
+            padding: 1rem 1rem 0.5rem 1rem;
+        } */
+        /* .navigation {
+            @media screen and (max-width: $lg-breakpoint) {
+                top: 3.5rem !important;
+            }
+        } */
+    }
+    /*   @media screen and (max-width: 1440px) {
+        padding: 0.2rem 2rem;
+    }
+    @media screen and (max-width: $xl-breakpoint) {
+        padding: 1rem 1rem 0.5rem 1rem;
+    } */
+    .header-inner {
+        .img-wrapper {
+            img {
+                max-width: 13rem;
+                object-fit: cover;
+                transition: 0.3s all;
+                /*   @media screen and (max-width:1440px) {
+                    max-width: 16rem;
+                }
+                @media screen and (max-width:$sm-breakpoint) {
+                    max-width: 12rem;
+                } */
+            }
+            span {
+                font-size: 4rem;
+                color: var(--color-red);
+                font-weight: 900;
+                font-style: italic;
+                /*  @media screen and (max-width: $xl-breakpoint) {
+                    font-size: 2.8rem;
+                }
+                @media screen and (max-width: $xl-breakpoint) {
+                    font-size: 2.4rem;
+                } */
+            }
+        }
+        #toggle-btn {
+            display: none;
+            background-color: transparent;
+            border: none;
+
+            /* @media screen and(max-width:$xl-breakpoint) {
+                display: block !important;
+            }
+ */
+            &.active {
+                i {
+                    color: var(--color-black) !important;
+                }
+            }
+
+            i {
+                position: relative;
+                z-index: 9999999;
+                font-size: 1.5rem;
+                color: var(--color-black);
+            }
+        }
+        .navigation {
+            .menu-area {
+                display: flex;
+                padding-left: 0rem;
+                /*  @media screen and (max-width: 1440px) {
+                    gap: 2rem;
+                }
+                @media screen and (max-width: $xl-breakpoint) {
+                    gap: 0.1rem;
+                }
+                @media screen and (max-width: $xl-breakpoint) {
+                    flex-direction: column;
+                    justify-content: flex-start !important;
+                    align-items: flex-start !important;
+                    padding-left: 1rem;
+                } */
+            }
+
+            /* @media screen and (max-width: $xl-breakpoint) {
+                padding-top: 2rem;
+                flex-direction: column;
+                position: fixed;
+                height: 100vh;
+                width: 100%;
+                background-color: var(--color-white);
+                z-index: 99999999;
+                bottom: 0;
+                left: -100rem;
+                top: 4.5rem;
+                text-align: left;
+                justify-content: flex-start !important;
+                align-items: flex-start !important;
+                transition: 0.3s all;
+                &.active {
+                    left: 0;
+                }
+            } */
+            li {
+                margin-right: 2rem;
+                &:last-child {
+                    margin-right: 0rem;
+                }
+                &:hover {
+                    .dropdown-menu {
+                        display: block !important;
+                    }
+                }
+                .dropdown-menu {
+                    display: none !important;
+                    &.show {
+                        display: block !important;
+                    }
+                    min-width: 15rem !important;
+                    border-radius: 0 !important;
+                    /*  @media screen and (min-width: $xl-breakpoint) {
+                        padding: 1rem 0.5rem;
+                    }
+                    @media screen and (max-width: $xl-breakpoint) {
+                        position: relative !important;
+                        border: none !important;
+                        transform: none !important;
+                        padding-left: 0rem !important;
+                    } */
+                    .dropdown-item {
+                        color: var(--color-gray);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        &:hover,
+                        &.active {
+                            background-color: transparent !important;
+                            color: var(--color-red);
+                        }
+                    }
+                }
+                .nav-link {
+                    color: var(--color-black);
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    transition: 0.3s all;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--color-purple);
+                    }
+                    /*  @media screen and (min-width: 1440px) {
+                        font-size: 1.2rem;
+                    }
+                    @media screen and (min-width: $xl-breakpoint) {
+                        padding: 2.3rem 0rem;
+                    }
+                    @media screen and (max-width: $xl-breakpoint) {
+                        font-size: 1.1rem;
+                    } */
+
+                    &.active {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 0%;
+                        height: 0.11rem;
+                        background-color: var(--color-red);
+                        position: absolute;
+                        bottom: 2rem;
+                        left: 0;
+                        transition: 0.3s all;
+                        /*   @media screen and (max-width: $xl-breakpoint) {
+                            display: none;
+                        } */
+                    }
+                }
+            }
+        }
+    }
+}
