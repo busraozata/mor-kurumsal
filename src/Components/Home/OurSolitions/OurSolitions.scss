@@ -3,8 +3,14 @@
 
 .solutions {
     padding-bottom: 3rem;
+    @include breakpoint(lg) {
+        padding: 0rem 1rem;
+    }
     .title-area {
         margin-bottom: 8rem;
+        @include breakpoint(xl) {
+           margin-bottom: 4rem;
+        }
         .title {
             margin-bottom: 2rem;
             font-weight: 500;
@@ -24,6 +30,9 @@
             color: var(--color-black);
             font-size: 1rem;
             font-weight: 300;
+            @include breakpoint(xl) {
+                font-size: 0.9rem;
+            }
         }
     }
     .list {
@@ -45,10 +54,17 @@
                 top: -0.2rem;
                 transition: 0.3s all;
             }
-            h5{
+            h5 {
                 font-size: 1.7rem;
                 color: var(--color-black);
                 margin-bottom: 1rem;
+                @include breakpoint(xl) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(sm) {
+                    font-size: 1.1rem;
+                    margin-top: 1rem;
+                }
             }
             span {
                 -webkit-text-fill-color: transparent;
@@ -56,10 +72,13 @@
                 color: var(--color-purple);
                 font-size: 2.5rem;
             }
-            p{
+            p {
                 color: var(--color-black);
                 font-weight: 300;
                 font-size: 1rem;
+                @include breakpoint(xl) {
+                    font-size: 0.9rem;
+                }
             }
         }
     }

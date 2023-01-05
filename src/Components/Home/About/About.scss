@@ -3,12 +3,18 @@
 
 .about {
     padding: 8rem 1rem;
+    @include breakpoint(lg) {
+        padding: 4rem 1rem;
+    }
     .title {
         margin-bottom: 5rem;
         font-weight: 700;
         position: relative;
         display: inline-block;
-        &::before{
+        @include breakpoint(lg) {
+            margin-bottom: 3rem;
+        }
+        &::before {
             content: "";
             position: absolute;
             bottom: -0.5rem;
@@ -19,6 +25,13 @@
     }
     .right-area {
         padding-left: 8rem;
+        @include breakpoint(xl) {
+            padding-left: 3rem;
+        }
+        @include breakpoint(lg) {
+           padding-left: 1rem;
+           margin-top: 2rem;
+        }
         h3 {
             margin-top: 0;
             margin-bottom: 1.3rem;
@@ -26,17 +39,31 @@
             font-weight: 700;
             text-align: left;
             position: relative;
-            
+            @include breakpoint(xl) {
+                font-size: 1.2rem;
+            }
+            @include breakpoint(lg) {
+                font-size: 1.1rem;
+            }
         }
 
         p {
             color: var(--color-black);
             font-weight: 300;
+            @include breakpoint(xl) {
+                font-size: 0.9rem;
+            }
+            @include breakpoint(lg) {
+                font-size: 0.8rem;
+            }
             span {
                 font-weight: 700;
                 display: block;
                 max-width: 30rem;
                 margin-bottom: 0.5rem;
+                @include breakpoint(xl) {
+                    font-size: 0.9rem;
+                }
             }
             display: -webkit-box;
             overflow: hidden;

@@ -21,11 +21,24 @@ export default function News() {
                     </div>
                     <div className="swiper-area" /* style={{paddingLeft:"20rem"}} */>
                 <Swiper
-                    slidesPerView={2}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
                     }}
+                    breakpoints={{
+                        640: {
+                          slidesPerView: 1,
+                          spaceBetween: 20,
+                        },
+                        768: {  
+                          slidesPerView: 2,
+                          spaceBetween: 40,
+                        },
+                        1024: {
+                          slidesPerView: 2,
+                          spaceBetween: 30,
+                        },
+                      }}
                     /* loop */
                     className="mySwiper"
                 >

@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.we {
+    padding: 6rem 1rem 3rem 1rem;
+    background-color: #0072b5;
+    @include breakpoint (lg){
+        padding: 3rem 1rem 0rem 1rem;
+    }
+    h4{
+        color: var(--color-white);
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-weight: 500;
+        @include breakpoint(xl){
+            font-size: 1.2rem;
+        }
+        @include breakpoint(lg){
+            font-size: 1rem;
+        }
+    }
+    .box {
+        img {
+            margin-bottom: 1rem;
+        }
+        span {
+            @include breakpoint(xl){
+                font-size: 0.9rem !important;
+            }
+            &.first {
+                font-weight: 500;
+                font-size: 1.5rem !important;
+                @include breakpoint(xl){
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            color: var(--color-white);
+        }
+    }
+}

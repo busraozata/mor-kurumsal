@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.footer {
+    overflow: hidden;
+
+    .left-area {
+        height: 33rem !important;
+        padding: 0;
+        background-color: #f4f4f4;
+        position: relative;
+        z-index: 9;
+        .contact-area {
+            h3 {
+                font-size: 1.3rem;
+            }
+            margin-top: 4rem;
+            a {
+                color: var(--color-black);
+                margin-bottom: 0.3rem;
+                display: block;
+                font-size: 0.9rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+        ul {
+            margin-top: 4rem !important;
+            margin-bottom: 2rem !important;
+            li {
+                a {
+                    color: var(--color-black);
+                    font-weight: 500;
+                    font-size: 1rem;
+                    &:hover {
+                        color: var(--color-purple);
+                    }
+                }
+            }
+        }
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100vw;
+            background-color: #f4f4f4;
+            position: absolute;
+            z-index: -1;
+            left: -100%;
+        }
+        .left {
+        }
+        .left-bottom-copyright {
+            background-color: var(--color-white);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            z-index: 9;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            padding-right: 2rem;
+            img {
+                max-width: 3rem;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+            }
+            &::before {
+                content: "";
+                height: 100%;
+                width: 100vw;
+                background-color: var(--color-white);
+                position: absolute;
+                z-index: -1;
+                left: -100%;
+            }
+        }
+    }
+    .right-area {
+        height: 38rem;
+        background-color: var(--color-purple);
+        position: relative;
+        z-index: 9999;
+        .right-content{
+            margin-top: 8rem;
+            padding-left: 2rem;
+            h3{
+                color: var(--color-white) !important;
+                font-size: 1.2rem;
+            }
+            .blog{
+                margin-top: 1rem;
+                h5{
+                    color: var(--color-white);
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100vw;
+            background-color: var(--color-purple);
+            position: absolute;
+            z-index: -1;
+        }
+       
+    }
+}

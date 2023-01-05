@@ -1,7 +1,88 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-
+import "./Footer.scss"
 export default function Footer() {
     return (
-        <div>Footer</div>
+        <footer className='footer'>
+            <div className="container">
+                <div className="row align-items-end">
+                    <div className="col-lg-7 left-area">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="left">
+                                    <ul>
+                                        <li><a href="">Yönetim Sistemleri Bakış Açımız</a></li>
+                                        <li><a href="">Site Kullanım Koşulları </a></li>
+                                        <li><a href="">Gizlilik Politikası</a></li>
+                                        <li><a href="">Çerez Politikası</a></li>
+                                        <li><a href="">Kişisel Verilerin İşlenmesi Hakkında</a></li>
+                                    </ul>
+                                    <div className='row mb-2'>
+                                        <div className="col-lg-3">
+                                            <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08cab8fa2447cb5a2fb_2022_TU%CC%88RKI%CC%87YE_IT.png" alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08c24229d138c11271d_logo-en-iyi-is-verenler.png" alt="" className='img-fluid' />
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-lg-3">
+                                            <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08e1847b7aa24a3e381_logo-best-workplace.png" alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08e1847b7aa24a3e381_logo-best-workplace.png" alt="" className='img-fluid' />
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08daa567c9a376954e5_iso.png" alt="" className='img-fluid' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 contact-area">
+                                <h3>İletişim</h3>
+                                <div>
+                                    <a href="mailto:info@enocta.com">info@morkurumsal.com</a>
+                                </div>
+                                <div>
+                                    <a href="tel: 0 (212) 466 29 20"> 0 (212) 466 29 20</a>
+                                </div>
+                                <p>
+                                    Zeytinlik Mah. Türkçü sok. Ferah Palas Apt. A blok No:16 K:4 D:9 Bakırköy / İstanbul
+                                </p>
+                                <div className="support">
+                                    <h3>DESTEK</h3>
+                                    <div>
+                                        <a href="mailto:info@morkurumsal.com">info@morkurumsal.com</a>
+                                    </div>
+                                    <div>
+                                        <a href="tel: 0 (212) 466 29 20"> 0 (212) 466 29 20</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-12">
+                                <div className="left-bottom-copyright d-flex justify-content-between">
+                                    <span>Copyright © 2022 Mor Kurumsal All Rights Reserved.</span>
+                                    <img className='img-fluid' src={process.env.PUBLIC_URL + '/img/wucize-footer.png'} alt="banner-img" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-5 right-area">
+                        <div className="right-content">
+                            <h3>MOR KURUMSAL BLOG</h3>
+                            <div className="blog">
+                                <h5> Yöneticiler İş Stresini Nasıl Azaltabilir?</h5>
+                                <span>03/01/2023</span>
+
+                                <p>
+                                    Daha Yaratıcı ve Yenilikçi Düşünebilmek için Bilmeniz Gerekenler
+                                </p>
+                                <a href="/#">Tüm İçerikler</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     )
 }

@@ -5,8 +5,14 @@
     background-color: var(--color-bg-gray);
     padding: 8rem 0rem;
     overflow: hidden !important;
+    @include breakpoint(lg) {
+        padding: 4rem 1rem;
+    }
     .title-area {
         margin-bottom: 5rem;
+        @include breakpoint(lg) {
+            margin-bottom: 3rem;
+        }
         .title {
             margin-bottom: 2rem;
             font-weight: 500;
@@ -28,7 +34,7 @@
             font-weight: 300;
         }
     }
-   
+
     .swiper {
         overflow: unset !important;
     }
@@ -40,6 +46,9 @@
             font-size: 0.9rem;
             margin-bottom: 1rem;
             display: block;
+            @include breakpoint(lg) {
+                margin-top: 1rem;
+            }
         }
         p {
             display: -webkit-box;

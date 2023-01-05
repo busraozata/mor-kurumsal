@@ -19,59 +19,56 @@ header {
                 }
             }
         }
-        /*  @media screen and (max-width: 1440px) {
-            padding: 0.1rem 2rem;
+        @media screen and (max-width: 1440px) {
+            padding: 0.1rem 2rem !important;
         }
-        @media screen and (max-width: $lg-breakpoint) {
-            padding: 1rem 1rem 0.5rem 1rem;
-        } */
-        /* .navigation {
-            @media screen and (max-width: $lg-breakpoint) {
+        @include breakpoint(lg) {
+            padding: 1rem 1rem 0.5rem 1rem !important;
+        }
+        .navigation {
+            @include breakpoint(lg) {
                 top: 3.5rem !important;
             }
-        } */
+        }
     }
-    /*   @media screen and (max-width: 1440px) {
-        padding: 0.2rem 2rem;
+    @media screen and (max-width: 1440px) {
+        padding: 0.2rem 2rem !important;
     }
-    @media screen and (max-width: $xl-breakpoint) {
-        padding: 1rem 1rem 0.5rem 1rem;
-    } */
+    @include breakpoint(xl) {
+        padding: 1rem 1rem 0.5rem 1rem !important;
+    }
+
     .header-inner {
         .img-wrapper {
             img {
                 max-width: 13rem;
                 object-fit: cover;
                 transition: 0.3s all;
-                /*   @media screen and (max-width:1440px) {
-                    max-width: 16rem;
+                @media screen and (max-width: 1440px) {
+                    max-width: 10rem !important;
                 }
-                @media screen and (max-width:$sm-breakpoint) {
-                    max-width: 12rem;
-                } */
+                @include breakpoint(sm) {
+                    max-width: 8rem !important;
+                }
             }
             span {
                 font-size: 4rem;
                 color: var(--color-red);
                 font-weight: 900;
                 font-style: italic;
-                /*  @media screen and (max-width: $xl-breakpoint) {
-                    font-size: 2.8rem;
-                }
-                @media screen and (max-width: $xl-breakpoint) {
+                @include breakpoint(xl) {
                     font-size: 2.4rem;
-                } */
+                }
             }
         }
         #toggle-btn {
             display: none;
             background-color: transparent;
             border: none;
-
-            /* @media screen and(max-width:$xl-breakpoint) {
-                display: block !important;
+            @include breakpoint(xl) {
+                display: block;
             }
- */
+
             &.active {
                 i {
                     color: var(--color-black) !important;
@@ -89,21 +86,18 @@ header {
             .menu-area {
                 display: flex;
                 padding-left: 0rem;
-                /*  @media screen and (max-width: 1440px) {
-                    gap: 2rem;
-                }
-                @media screen and (max-width: $xl-breakpoint) {
-                    gap: 0.1rem;
-                }
-                @media screen and (max-width: $xl-breakpoint) {
+                @include breakpoint(xl) {
                     flex-direction: column;
                     justify-content: flex-start !important;
                     align-items: flex-start !important;
-                    padding-left: 1rem;
-                } */
+                    padding-left: 3rem !important;
+                }
+                @include breakpoint(sm) {
+                    padding-left: 2rem !important;
+                }
             }
 
-            /* @media screen and (max-width: $xl-breakpoint) {
+            @include breakpoint(xl) {
                 padding-top: 2rem;
                 flex-direction: column;
                 position: fixed;
@@ -113,7 +107,7 @@ header {
                 z-index: 99999999;
                 bottom: 0;
                 left: -100rem;
-                top: 4.5rem;
+                top: 5.3rem !important;
                 text-align: left;
                 justify-content: flex-start !important;
                 align-items: flex-start !important;
@@ -121,9 +115,16 @@ header {
                 &.active {
                     left: 0;
                 }
-            } */
+            }
+
             li {
                 margin-right: 2rem;
+                @include breakpoint(xl) {
+                    margin-bottom: 2rem;
+                }
+                @include breakpoint(lg) {
+                    margin-bottom: 1rem;
+                }
                 &:last-child {
                     margin-right: 0rem;
                 }
@@ -139,15 +140,16 @@ header {
                     }
                     min-width: 15rem !important;
                     border-radius: 0 !important;
-                    /*  @media screen and (min-width: $xl-breakpoint) {
-                        padding: 1rem 0.5rem;
-                    }
-                    @media screen and (max-width: $xl-breakpoint) {
+                    @include breakpoint(xl) {
                         position: relative !important;
                         border: none !important;
                         transform: none !important;
                         padding-left: 0rem !important;
-                    } */
+                    }
+                    @media screen and (min-width: 1200px) {
+                        padding: 1rem 0.5rem;
+                    }
+
                     .dropdown-item {
                         color: var(--color-gray);
                         font-size: 1rem;
@@ -169,15 +171,15 @@ header {
                     &:hover {
                         color: var(--color-purple);
                     }
-                    /*  @media screen and (min-width: 1440px) {
+                    @media screen and (min-width: 1440px) {
                         font-size: 1.2rem;
                     }
-                    @media screen and (min-width: $xl-breakpoint) {
+                    @media screen and (min-width: 1200px) {
                         padding: 2.3rem 0rem;
                     }
-                    @media screen and (max-width: $xl-breakpoint) {
+                    @include breakpoint(xl) {
                         font-size: 1.1rem;
-                    } */
+                    }
 
                     &.active {
                         &::before {
@@ -199,9 +201,10 @@ header {
                         bottom: 2rem;
                         left: 0;
                         transition: 0.3s all;
-                        /*   @media screen and (max-width: $xl-breakpoint) {
+
+                        @include breakpoint(xl) {
                             display: none;
-                        } */
+                        }
                     }
                 }
             }

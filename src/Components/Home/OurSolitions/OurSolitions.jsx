@@ -13,7 +13,7 @@ export default function OurSolitions() {
                     </div>
                     <div className="list">
                         <div className="row">
-                            <div className="col-lg-4 mb-5">
+                            <div className="col-lg-4 col-md-4 mb-5">
                                 <div className="box">
                                     <div className="box-title">
                                         <span>01</span>
@@ -22,7 +22,7 @@ export default function OurSolitions() {
                                     <p>Geliştirmek için hangi yetkinliklere odaklanmalıyım?</p>
                                 </div>
                             </div>
-                            <div className="col-lg-4 mb-5">
+                            <div className="col-lg-4 col-md-4 mb-5">
                                 <div className="box">
                                     <div className="box-title">
                                         <span>02</span>
@@ -31,7 +31,7 @@ export default function OurSolitions() {
                                     <p>Odaklandığım bir yetkinlikteki olgunluk seviyem ne ve ne olmalı?</p>
                                 </div>
                             </div>
-                            <div className="col-lg-4 mb-5">
+                            <div className="col-lg-4 col-md-4 mb-5">
                                 <div className="box">
                                     <div className="box-title">
                                         <span>03</span>
@@ -40,7 +40,7 @@ export default function OurSolitions() {
                                     <p>Bu hedefe ulaşmak için hangi gelişim aksiyonlarını alacağım?</p>
                                 </div>
                             </div>
-                            <div className="col-lg-4 mb-5">
+                            <div className="col-lg-4 col-md-4 mb-5">
                                 <div className="box">
                                     <div className="box-title">
                                         <span>04</span>
@@ -51,7 +51,7 @@ export default function OurSolitions() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-lg-4 mb-5">
+                            <div className="col-lg-4 col-md-4 mb-5">
                                 <div className="box">
                                     <div className="box-title">
                                         <span>05</span>
