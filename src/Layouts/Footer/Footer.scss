@@ -4,13 +4,29 @@
 .footer {
     overflow: hidden;
 
+    .row-area {
+        @include breakpoint(lg) {
+            flex-direction: column-reverse;
+        }
+    }
     .left-area {
         height: 33rem !important;
         padding: 0;
         background-color: #f4f4f4;
         position: relative;
         z-index: 9;
+        @include breakpoint(lg) {
+            height: auto !important;
+            margin-bottom: 2rem;
+        }
+        @include breakpoint(sm) {
+            padding: 0rem 1rem;
+        }
+
         .contact-area {
+            @include breakpoint(lg) {
+                padding-bottom: 7rem;
+            }
             h3 {
                 font-size: 1.3rem;
             }
@@ -20,6 +36,9 @@
                 margin-bottom: 0.3rem;
                 display: block;
                 font-size: 0.9rem;
+                &:hover {
+                    color: var(--color-purple);
+                }
             }
             p {
                 font-size: 0.9rem;
@@ -47,8 +66,14 @@
             position: absolute;
             z-index: -1;
             left: -100%;
+            @include breakpoint(lg) {
+                right: -2rem;
+            }
         }
-        .left {
+        img {
+            @include breakpoint(lg) {
+                max-width: 3rem !important;
+            }
         }
         .left-bottom-copyright {
             background-color: var(--color-white);
@@ -61,10 +86,25 @@
             align-items: center;
             font-size: 0.8rem;
             padding-right: 2rem;
+            @include breakpoint(sm) {
+                flex-direction: column;
+            }
+            span {
+                @include breakpoint(sm) {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-size: 0.7rem;
+                    text-align: center;
+                }
+            }
             img {
                 max-width: 3rem;
                 -webkit-filter: invert(1);
                 filter: invert(1);
+                @include breakpoint(sm) {
+                    max-width: 2rem !important;
+                
+                }
             }
             &::before {
                 content: "";
@@ -82,18 +122,64 @@
         background-color: var(--color-purple);
         position: relative;
         z-index: 9999;
-        .right-content{
+
+        .right-content {
             margin-top: 8rem;
-            padding-left: 2rem;
-            h3{
-                color: var(--color-white) !important;
-                font-size: 1.2rem;
+            padding-left: 4rem;
+            @include breakpoint(lg) {
+                padding-left: 1rem;
+                margin-top: 5rem;
             }
-            .blog{
+
+            h3 {
+                color: var(--color-white) !important;
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin-bottom: 3rem;
+            }
+            .blog {
                 margin-top: 1rem;
-                h5{
+                max-width: 12rem;
+                h5 {
                     color: var(--color-white);
                     font-size: 0.9rem;
+                    font-weight: 500;
+                    margin-bottom: 0rem;
+                }
+                span {
+                    color: var(--color-white);
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                }
+                margin-bottom: 2rem;
+            }
+            .btn {
+                display: flex;
+                max-height: 42px;
+                min-height: 42px;
+                min-width: 125px;
+                padding-right: 16px;
+                padding-left: 16px;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                border: 1px solid var(--color-white);
+                border-radius: 21px;
+                background-color: transparent;
+                color: #fff;
+                font-size: 12px;
+                line-height: 26px;
+                font-weight: 400;
+                text-align: center;
+                text-decoration: none;
+                display: inline-flex;
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, 0.1);
                 }
             }
         }
@@ -104,7 +190,33 @@
             background-color: var(--color-purple);
             position: absolute;
             z-index: -1;
+            @include breakpoint(lg) {
+                left: -24px;
+            }
         }
-       
+
+        .social-media {
+            margin-top: 3rem;
+            span {
+                margin-bottom: 2rem !important;
+                display: block;
+                color: var(--color-white);
+                font-weight: 400;
+            }
+            ul {
+                li {
+                    margin-right: 1rem;
+                    a {
+                        border-radius: 100%;
+                        padding: 0.5rem 0.7rem;
+                        border: 1px solid var(--color-white);
+                        color: var(--color-white);
+                        &:hover {
+                            background-color: hsla(0, 0%, 100%, 0.1);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

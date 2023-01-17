@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+.about{
+    .about-content{
+        p{
+            -webkit-line-clamp: inherit !important;
+        }
+    }
+}

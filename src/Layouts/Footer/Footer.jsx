@@ -1,13 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import "./Footer.scss"
+import { RiLinkedinFill } from 'react-icons/ri';
+import { AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import dummyNews from '../../API/dummyNews';
 export default function Footer() {
     return (
         <footer className='footer'>
             <div className="container">
-                <div className="row align-items-end">
+                <div className="row row-area align-items-end">
                     <div className="col-lg-7 left-area">
-                        <div className="row">
+                        <div className="row ">
                             <div className="col-lg-6">
                                 <div className="left">
                                     <ul>
@@ -18,21 +22,21 @@ export default function Footer() {
                                         <li><a href="">Kişisel Verilerin İşlenmesi Hakkında</a></li>
                                     </ul>
                                     <div className='row mb-2'>
-                                        <div className="col-lg-3">
+                                        <div className="col-lg-3 col-md-1  col-2">
                                             <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08cab8fa2447cb5a2fb_2022_TU%CC%88RKI%CC%87YE_IT.png" alt="" className='img-fluid' />
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-lg-3 col-md-1  col-2">
                                             <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08c24229d138c11271d_logo-en-iyi-is-verenler.png" alt="" className='img-fluid' />
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-3">
+                                        <div className="col-lg-3  col-md-1 col-2">
                                             <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08e1847b7aa24a3e381_logo-best-workplace.png" alt="" className='img-fluid' />
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-lg-3 col-md-1  col-2">
                                             <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08e1847b7aa24a3e381_logo-best-workplace.png" alt="" className='img-fluid' />
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-lg-3  col-md-1 col-2">
                                             <img src="https://uploads-ssl.webflow.com/604886a06525c66fe53035ec/6319e08daa567c9a376954e5_iso.png" alt="" className='img-fluid' />
                                         </div>
                                     </div>
@@ -62,7 +66,9 @@ export default function Footer() {
                             <div className="col-lg-12">
                                 <div className="left-bottom-copyright d-flex justify-content-between">
                                     <span>Copyright © 2022 Mor Kurumsal All Rights Reserved.</span>
-                                    <img className='img-fluid' src={process.env.PUBLIC_URL + '/img/wucize-footer.png'} alt="banner-img" />
+                                    <a href="www.wucize.com">
+                                        <img className='img-fluid' src={process.env.PUBLIC_URL + '/img/wucize-footer.png'} alt="banner-img" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -70,14 +76,28 @@ export default function Footer() {
                     <div className="col-lg-5 right-area">
                         <div className="right-content">
                             <h3>MOR KURUMSAL BLOG</h3>
-                            <div className="blog">
-                                <h5> Yöneticiler İş Stresini Nasıl Azaltabilir?</h5>
-                                <span>03/01/2023</span>
+                            {dummyNews.news?.map((item, index) => {
+                                return (
+                                    item.length < 2 && (
+                                        <div className="blog" key={index}>
+                                            <h5>{item.title}</h5>
+                                            <span>09/01/2023</span>
+                                        </div>
+                                    )
 
-                                <p>
-                                    Daha Yaratıcı ve Yenilikçi Düşünebilmek için Bilmeniz Gerekenler
-                                </p>
-                                <a href="/#">Tüm İçerikler</a>
+                                )
+                            })}
+
+                            <a href="/#" className='btn'>Tüm İçerikler</a>
+                            <div className="social-media">
+                                <span>BİZİ TAKİP EDİN</span>
+                                <ul className='d-flex align-items-center'>
+                                    <li><a href="#"><RiLinkedinFill /></a></li>
+                                    <li><a href="#"><AiOutlineTwitter /></a></li>
+                                    <li><a href="#"><FaFacebookF /></a></li>
+                                    <li><a href="#"><AiOutlineInstagram /></a></li>
+                                    <li><a href="#"><AiFillYoutube /></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

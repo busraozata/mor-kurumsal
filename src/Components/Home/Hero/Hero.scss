@@ -7,6 +7,11 @@
     @include breakpoint(lg) {
         padding: 4rem 1rem;
     }
+    .swiper-slide-active {
+        .content {
+            animation: fadeInLeft 1.5s;
+        }
+    }
     .content {
         h1 {
             color: var(--color-black);

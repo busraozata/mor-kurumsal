@@ -19,7 +19,7 @@ export default function Header() {
             <div class="container">
                 <div class="header-inner d-flex align-items-center justify-content-between">
                     <div class="img-wrapper">
-                        <a href="index.html">
+                        <a href="/">
                             <img className='img-fluid' src={process.env.PUBLIC_URL + '/img/mor-logo.png'} alt="logo-img" />
                         </a>
                     </div>

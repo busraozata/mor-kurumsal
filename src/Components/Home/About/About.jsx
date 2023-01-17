@@ -2,7 +2,8 @@
 import React from 'react'
 import "./About.scss"
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-
+import dummyAbout from "../../../API/dummyAbout";
+import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -10,7 +11,7 @@ export default function About() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h2 className='title'>Hakkımızda</h2>
+                        <h2 className='title'>{dummyAbout.title}</h2>
                     </div>
                     <div className="col-lg-6">
                         <div className="img-wrapper">
@@ -19,13 +20,13 @@ export default function About() {
                     </div>
                     <div className="col-lg-6 right-area">
                         <div className="about-content">
-                            <h3>Enocta Katalog Web Sitesi Açıldı!</h3>
+                            <h3>{dummyAbout.titleTwo}</h3>
                             <p>
-                                <span>7000+ Türkçe dijital içerikle ilgili tüm detaylar artık Enocta Katalog web sitesinde!</span>
-                                Özgür öğrenme noktası Enocta Katalog’da aradığınızı bulmak artık çok kolay! Nasıl mı? Yeni “web sayfamız”da yer alan uygun filtrelerle, gelişim alanlarınıza, öğrenme tercihlerinize, hedef kitlenize uygun eğitimleri çok daha hızlı bularak seçim yapabilecek ve anında teklif talep edebileceksiniz. Ayrıca günden güne yeni eğitimlerle zenginleşen Enocta Katalog ve kurumunuza özel canlı webinar seçenekleri sunan Çevrimiçi Katalog’u çok daha yakından takip etme fırsatı bularak, yenilikleri kaçırmayacaksınız!
+                                <span>{dummyAbout.smallTitle}</span>
+                                {dummyAbout.desc}
                             </p>
-                           
-                            <a href="/#" className='btn'>Daha fazlası için  <HiOutlineArrowNarrowRight/> </a>
+
+                            <Link to={dummyAbout.buttonPath} className='btn'>{dummyAbout.buttonTitle}  <HiOutlineArrowNarrowRight /> </Link>
                         </div>
                     </div>
                 </div>
