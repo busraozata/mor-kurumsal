@@ -14,8 +14,8 @@ export default function Referances() {
                     </div>
                 </div>
 
-                <div class="marquee-wrapper">
-                    <div class="marquee">
+                <div className="marquee-wrapper">
+                    <div className="marquee">
                         {
                             dummyReferances.referances?.map((item, index) => {
                                 return (

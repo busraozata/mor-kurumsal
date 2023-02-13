@@ -1,0 +1,75 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixin.scss";
+
+.solution {
+    margin-top: -13rem;
+    position: relative;
+    z-index: 9;
+    @include breakpoint(lg){
+        margin-top: 1rem;
+    }
+    .swiper {
+        padding: 4rem 1rem;
+        @include breakpoint(sm){
+            padding: 2rem 1rem;
+        }
+        .swiper-slide {
+            transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+            -webkit-transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+            -ms-transform: translateX(0%) rotateZ(-11deg) scale(0.95);
+            transition: transform 0.4s ease-out;
+
+            &.swiper-slide-active,
+            &:hover {
+                transform: none;
+                .box {
+                    background-image: url(../../../../../public/img/gradient.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    img {
+                        filter: brightness(9);
+                    }
+                    h5 {
+                        color: var(--color-white);
+                    }
+                    p {
+                        color: var(--color-white);
+                    }
+                }
+            }
+            .box {
+                background-color: var(--color-bg-gray);
+                height: 20rem;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-radius: 10px;
+                transition: 0.3s all;
+                img {
+                    margin-bottom: 2rem;
+                    height: 4rem;
+                    width: 4rem;
+                    object-fit: cover;
+                }
+                h5 {
+                    font-size: 1.8rem;
+                    color: var(--color-purple);
+                    margin-bottom: 1rem;
+                    @include breakpoint(lg){
+                        font-size: 1.3rem;
+                    }
+                }
+                p {
+                    color: var(--color-black);
+                    @include breakpoint(lg){
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

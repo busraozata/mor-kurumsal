@@ -1,0 +1,97 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.aboutNews {
+    background-color: var(--color-bg-gray);
+    overflow: hidden;
+    padding: 8rem 0rem;
+    @include breakpoint(lg) {
+        padding: 4rem 0rem;
+    }
+    @include breakpoint(sm) {
+        padding: 4rem 1.5rem;
+    }
+    h2 {
+        max-width: 20rem;
+        line-height: 48px;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        @include breakpoint(xl) {
+            font-size: 1.5rem;
+            max-width: 15rem;
+            line-height: 40px;
+            margin-bottom: 1rem;
+        }
+        @include breakpoint(sm) {
+            font-size: 1.4rem;
+            line-height: 35px;
+            width: 100% !important;
+        }
+    }
+    .text {
+        max-width: 23rem;
+        font-size: 0.9rem;
+        font-weight: 300;
+        @include breakpoint(sm) {
+            font-size: 0.8rem;
+        }
+    }
+    .swiper {
+        overflow: unset !important;
+        clip-path: inset(-100vw -100vw -100vw 0);
+        @include breakpoint(sm) {
+            margin-top: 1rem;
+            clip-path: unset;
+            overflow: hidden !important;
+        }
+        .swiper-slide {
+            background-color: var(--color-white);
+            background-size: cover;
+            background-position: center;
+            height: 25rem;
+            border-radius: 5px;
+            padding: 2rem;
+            transition: 0.3s all;
+            &.swiper-slide-active, &:hover {
+                background-image: url(../../../../public/img/gradient.jpg);
+                background-repeat: no-repeat;
+                span,
+                h6,
+                p {
+                    color: rgb(255, 255, 255);
+                }
+            }
+            @include breakpoint(xl) {
+                height: 20rem;
+            }
+            span {
+                color: var(--color-black);
+                font-size: 0.9rem;
+                display: block; 
+            }
+            h6 {
+                color: var(--color-purple);
+                font-weight: 600;
+                line-height: 34px;
+                font-size: 1.3rem;
+                transition: 0.3s all;
+                &:hover {
+                    color: var(--color-black);
+                }
+                @include breakpoint(xl) {
+                    font-size: 1.1rem;
+                    line-height: 28px;
+                }
+            }
+            p {
+                color: var(--color-black);
+                font-size: 0.9rem;
+                font-weight: 400;
+                @include breakpoint(xl) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import { RiLinkedinFill } from 'react-icons/ri';
 import { AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import dummyNews from '../../API/dummyNews';
+import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
         <footer className='footer'>
@@ -78,9 +79,9 @@ export default function Footer() {
                             <h3>MOR KURUMSAL BLOG</h3>
                             {dummyNews.news?.map((item, index) => {
                                 return (
-                                    item.length < 2 && (
+                                    index < 2 && (
                                         <div className="blog" key={index}>
-                                            <h5>{item.title}</h5>
+                                            <Link to={`/blog/${item.title}`}><h5>{item.title}</h5></Link>
                                             <span>09/01/2023</span>
                                         </div>
                                     )
@@ -88,7 +89,7 @@ export default function Footer() {
                                 )
                             })}
 
-                            <a href="/#" className='btn'>Tüm İçerikler</a>
+                           {/*  <a href="/#" className='btn'>Tüm İçerikler</a> */}
                             <div className="social-media">
                                 <span>BİZİ TAKİP EDİN</span>
                                 <ul className='d-flex align-items-center'>

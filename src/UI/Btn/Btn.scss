@@ -1,0 +1,71 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+.btn-link {
+	display: flex;
+	text-decoration: none;
+	text-align: center;
+	/* line-height: 2; */
+	font-weight: 600;
+	color: var(--color-purple) !important;
+	font-size: 0.7rem;
+
+	/* use combination of any two */
+	/* 1. */
+	/* padding: 5px; */
+
+	/* 2. */
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.btn-link::before,
+.btn-link::after,
+.link-span::before,
+.link-span::after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	transition: 1s;
+	/* -webkit-mix-blend-mode: hue; */
+}
+
+.btn-link::before {
+	top: -2px;
+	left: -2px;
+	border-top: 2px solid var(--color-purple);
+	border-left: 2px solid var(--color-purple);
+}
+.btn-link::after {
+	top: -2px;
+	right: -2px;
+	border-top: 2px solid var(--color-purple);
+	border-right: 2px solid var(--color-purple);
+}
+
+.link-span::before {
+	bottom: -2px;
+	left: -2px;
+	border-bottom: 2px solid var(--color-purple);
+	border-left: 2px solid var(--color-purple);
+}
+.link-span::after {
+	bottom: -2px;
+	right: -2px;
+	border-bottom: 2px solid var(--color-purple);
+	border-right: 2px solid var(--color-purple);
+}
+
+
+.btn-link:hover::before,
+.btn-link:hover::after,
+.btn-link:hover .link-span::before,
+.btn-link:hover .link-span::after  {
+	width: calc( 180px / 2);
+	height: calc( 50px / 2);
+}
+
+.link-div{
+	display: inline-flex;
+}

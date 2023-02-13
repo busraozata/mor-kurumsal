@@ -4,15 +4,14 @@ import "./About.scss"
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import dummyAbout from "../../../API/dummyAbout";
 import { Link } from 'react-router-dom';
+import Btn from '../../../UI/Btn/Btn';
 
 export default function About() {
     return (
         <section className='about' id='about'>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <h2 className='title'>{dummyAbout.title}</h2>
-                    </div>
+            <div className="container-fluid">
+                <div className="row align-items-center">
+                    
                     <div className="col-lg-6">
                         <div className="img-wrapper">
                             <img className='img-fluid' src={process.env.PUBLIC_URL + '/img/close-up-businessman-with-digital-tablet.jpg'} alt="banner-img" />
@@ -25,8 +24,9 @@ export default function About() {
                                 <span>{dummyAbout.smallTitle}</span>
                                 {dummyAbout.desc}
                             </p>
-
-                            <Link to={dummyAbout.buttonPath} className='btn'>{dummyAbout.buttonTitle}  <HiOutlineArrowNarrowRight /> </Link>
+                            <div className="link-div">
+                                <Btn route={`${dummyAbout.buttonPath}`} title="Devamını Oku..." />
+                            </div>
                         </div>
                     </div>
                 </div>

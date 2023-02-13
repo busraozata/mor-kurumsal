@@ -29,6 +29,7 @@ header {
             @include breakpoint(lg) {
                 top: 3.5rem !important;
             }
+
         }
     }
     @media screen and (max-width: 1440px) {
@@ -83,6 +84,70 @@ header {
             }
         }
         .navigation {
+            .lang-area {
+                margin-left: 1rem;
+                margin-top: 2rem;
+                a {
+                    color: var(--color-black);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex !important;
+                }
+                .btn {
+                    color: var(--color-black);
+                    font-size: 1.1rem !important;
+                    font-weight: 500;
+                    display: flex;
+
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+                .dropdown-menu {
+                    min-width: 6rem;
+                    padding-top: 1rem;
+                    margin-top: 1rem;
+                    background-color: transparent;
+                    border-radius: 0rem;
+                    border: none;
+                    li {
+                        margin-right: 0rem !important;
+                        &:hover {
+                            a {
+                                color: var(--color-black) !important;
+                            }
+                        }
+                        a {
+                            transition: 0.3s all;
+                            font-size: 1rem !important;
+                            color: var(--color-black);
+                            img {
+                                max-width: 1.7rem;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+                img {
+                    max-width: 2rem;
+                    margin-left: 0.5rem;
+                }
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        a {
+                            border: none !important;
+                            &:hover {
+                                background-color: transparent !important;
+                            }
+                        }
+                    }
+                }
+            }
             .menu-area {
                 display: flex;
                 padding-left: 0rem;
@@ -114,6 +179,10 @@ header {
                 transition: 0.3s all;
                 &.active {
                     left: 0;
+                }
+                @include breakpoint(lg)
+                {
+                    top: 5rem!important;
                 }
             }
 
@@ -205,6 +274,69 @@ header {
                         @include breakpoint(xl) {
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+    }
+    .lang-area {
+        margin-left: 1rem;
+        a {
+            color: var(--color-black);
+            font-size: 1rem;
+            font-weight: 500;
+            display: flex;
+            border: none;
+        }
+        .btn {
+            color: var(--color-black);
+            font-size: 1.1rem !important;
+            font-weight: 500;
+            display: flex;
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .dropdown-menu {
+            min-width: 6rem;
+            padding-top: 1rem;
+            margin-top: 1rem;
+            background-color: var(--color-white);
+            border-radius: 0rem;
+            li {
+                &:hover {
+                    a {
+                        color: var(--color-purple) !important;
+                    }
+                }
+                a {
+                    transition: 0.3s all;
+                    font-size: 1rem !important;
+                    color: var(--color-black);
+                    img {
+                        max-width: 1.7rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        img {
+            max-width: 2rem;
+            margin-left: 0.5rem;
+        }
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+                a {
+                    border: none !important;
+                    &:hover {
+                        background-color: transparent !important;
                     }
                 }
             }

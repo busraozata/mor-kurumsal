@@ -37,9 +37,9 @@ export default function Contact() {
                                         </div>
                                     </div>
                                     <div className="col-lg-12 mb-4">
-                                    <div class="mb-3 form-check d-flex">
+                                    <div className="mb-3 form-check d-flex">
                                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                        <label className="form-check-label" for="exampleCheck1">Bu form ile toplanan kişisel verileriniz Enocta tarafından talebinize dair işlemlerin yerine getirilmesi ve paylaşmış olduğunuz iletişim adresi üzerinden tanıtım, bülten ve pazarlama içerikleri gönderilmesi amacıyla Kullanıcı Aydınlatma Metni çerçevesinde işlenebilecektir</label>
+                                        <label className="form-check-label" htmlFor="exampleCheck1">Bu form ile toplanan kişisel verileriniz Enocta tarafından talebinize dair işlemlerin yerine getirilmesi ve paylaşmış olduğunuz iletişim adresi üzerinden tanıtım, bülten ve pazarlama içerikleri gönderilmesi amacıyla Kullanıcı Aydınlatma Metni çerçevesinde işlenebilecektir</label>
                                     </div>
                                     </div>
                                     <div className="col-lg-12">

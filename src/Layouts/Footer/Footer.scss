@@ -145,6 +145,10 @@
                     font-size: 0.9rem;
                     font-weight: 500;
                     margin-bottom: 0rem;
+                    transition: 0.3s all;
+                    &:hover{
+                        color: var(--color-black);
+                    }
                 }
                 span {
                     color: var(--color-white);

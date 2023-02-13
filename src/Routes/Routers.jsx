@@ -4,6 +4,7 @@ import AboutSection from '../Components/About/AboutSection';
 import Blog from '../Components/Blog/Blog';
 import Home from '../Pages/Home/Home';
 import dummyNews from '../API/dummyNews';
+import Blogs from '../Components/Blogs/Blogs';
 
 export default function Routers() {
     let blogs = dummyNews.news
@@ -11,6 +12,8 @@ export default function Routers() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/about' element={<AboutSection />} />
+            <Route path='/blogs' element={<Blogs />} />
             <Route path='/blog/:title' element={<Blog blogs={blogs} />} />
+            
         </Routes>)
 }
