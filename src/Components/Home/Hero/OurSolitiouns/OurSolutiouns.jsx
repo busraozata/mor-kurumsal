@@ -4,12 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import dummyOurSolutions from '../../../../API/dummyOurSolitions'
 import { Autoplay } from "swiper";
-
 import "./OurSolutiouns.scss"
-
+import { useTranslation } from "react-i18next";
 export default function OurSolutiouns() {
+    const { t, ready } = useTranslation();
+
+    if (!ready) return 'loading translations...';
+
+    const Solutiouns = t('solutions', { returnObjects: true });
     return (
         <section className='solution'>
             <div className="container">
@@ -36,7 +39,7 @@ export default function OurSolutiouns() {
                     modules={[Autoplay]}
                     className="mySwiper"
                 >
-                    {dummyOurSolutions.solutions?.map((item, index) => {
+                    {Solutiouns.map((item, index) => {
                         return (
                             <SwiperSlide key={index}>
                                 <div className="box">

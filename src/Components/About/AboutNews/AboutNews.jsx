@@ -8,7 +8,6 @@ import dummyNews from '../../../API/dummyNews';
 import { Link } from 'react-router-dom';
 import Contact from '../../Home/Contact/Contact';
 import { Autoplay} from "swiper";
-import Moment from 'react-moment';
 import moment from 'moment';
 export default function AboutNews() {
     return (

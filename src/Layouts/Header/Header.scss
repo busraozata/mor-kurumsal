@@ -2,44 +2,151 @@
 @import "../../styles/mixin.scss";
 
 header {
-    background-color: var(--color-white);
-    padding: 1rem 6rem 1rem 6rem !important;
-    position: relative;
+    
+    position: fixed;
     transition: 0.3s all;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    @include breakpoint(xl) {
+        background-color: var(--color-white);
+        position: relative;
+    }
+    .top-header{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-purple);
+        @include breakpoint(xl){
+            display: none;
+        }
+        ul{
+            li{
+                margin-right: 1rem;
+                a{
+                    color: var(--color-white);
+                    font-size: 0.9rem;
+                    transition: 0.3s all;
+                    &:hover{
+                        color: var(--color-purple);
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        line-height: 0;
+        h6 {
+            color: var(--color-purple);
+            font-size: 5rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+            transition: 0.3s all;
+            @media screen and (max-width: 1440px) {
+                font-size: 4rem;
+            }
+            @include breakpoint(sm) {
+                font-size: 3rem;
+            }
+        }
+        span {
+            font-size: 0.4rem !important;
+            color: var(--color-black) !important;
+            font-size: 0.92rem !important;
+            font-style: inherit !important;
+            font-weight: 500 !important;
+            transition: 0.3s all;
+            @media screen and (max-width: 1440px) {
+                font-size: 0.75rem !important;
+            }
+            @include breakpoint(sm) {
+                font-size: 0.55rem !important;
+            }
+        }
+        padding-bottom: 1rem;
+    }
+
     &.sticky {
-        position: sticky;
         top: 0;
         z-index: 9999999;
         transition: 0.3s all;
-        padding: 0.1rem 6rem !important;
+        .logo{
+            @media screen and (min-width:1200px) {
+                h6{
+                    font-size: 4rem;
+                }
+                span{
+                    font-size: 0.75rem !important;
+                }
+            }
+        }
+        
+        
+        background-color: rgba(255, 255, 255, 0.829);
+        @include breakpoint(xl) {
+            background-color: var(--color-white);
+            position: sticky;
+        }
+        .top-header{
+            display: none;
+        }
+        .btn-check:checked + .btn,
+        .btn.active,
+        .btn.show,
+        .btn:first-child:active,
+        :not(.btn-check) + .btn:active {
+            color: var(--color-black) !important;
+        }
         .header-inner {
             .img-wrapper {
                 img {
                     max-width: 10rem;
                 }
             }
+            .nav-link {
+                color: var(--color-black) !important;
+            }
         }
-        @media screen and (max-width: 1440px) {
-            padding: 0.1rem 2rem !important;
+        .lang-area {
+            a,
+            .btn {
+                color: var(--color-black) !important;
+            }
         }
-        @include breakpoint(lg) {
-            padding: 1rem 1rem 0.5rem 1rem !important;
+        .header-inner{
+            padding: 0.1rem 0rem !important;
+            @media screen and (max-width: 1440px) {
+                padding: 0.1rem 0rem !important;
+            }
+            @include breakpoint(lg) {
+                padding: 1rem 0rem 0.5rem 0rem !important;
+            }
+            @include breakpoint(sm) {
+                padding: 1rem 1rem 0.5rem 1rem !important;
+            }
         }
+       
         .navigation {
+            @include breakpoint(xl){
+                top: 4.7rem !important;
+            }
             @include breakpoint(lg) {
                 top: 3.5rem !important;
             }
-
         }
     }
-    @media screen and (max-width: 1440px) {
-        padding: 0.2rem 2rem !important;
-    }
-    @include breakpoint(xl) {
-        padding: 1rem 1rem 0.5rem 1rem !important;
-    }
+   
 
     .header-inner {
+        padding: 1rem 0rem 1rem 0rem !important;
+        @media screen and (max-width: 1440px) {
+            padding: 0.2rem 0rem !important;
+        }
+        @include breakpoint(xl) {
+            padding: 1rem 0rem 0.5rem 0rem !important;
+        }
+        @include breakpoint(sm) {
+            padding: 1rem 1rem 0.5rem 1rem !important;
+        }
         .img-wrapper {
             img {
                 max-width: 13rem;
@@ -72,7 +179,7 @@ header {
 
             &.active {
                 i {
-                    color: var(--color-black) !important;
+                    color: var(--color-white) !important;
                 }
             }
 
@@ -84,6 +191,11 @@ header {
             }
         }
         .navigation {
+            .nav-link{
+                &:hover{
+                    color: var(--color-purple) !important;
+                }
+            }
             .lang-area {
                 margin-left: 1rem;
                 margin-top: 2rem;
@@ -92,6 +204,9 @@ header {
                     font-size: 1rem;
                     font-weight: 500;
                     display: flex !important;
+                    &:hover{
+                        color: var(--color-purple) !important;
+                    }
                 }
                 .btn {
                     color: var(--color-black);
@@ -143,6 +258,7 @@ header {
                             border: none !important;
                             &:hover {
                                 background-color: transparent !important;
+                                color: var(--color-purple) !important;
                             }
                         }
                     }
@@ -155,7 +271,7 @@ header {
                     flex-direction: column;
                     justify-content: flex-start !important;
                     align-items: flex-start !important;
-                    padding-left: 3rem !important;
+                    padding-left: 2rem !important;
                 }
                 @include breakpoint(sm) {
                     padding-left: 2rem !important;
@@ -180,9 +296,14 @@ header {
                 &.active {
                     left: 0;
                 }
-                @include breakpoint(lg)
-                {
-                    top: 5rem!important;
+                @include breakpoint(xl){
+                    top: 5.7rem !important;
+                }
+                @include breakpoint(lg) {
+                    top: 6rem !important;
+                }
+                @include breakpoint(sm) {
+                    top: 5.7rem !important;
                 }
             }
 
@@ -231,7 +352,7 @@ header {
                     }
                 }
                 .nav-link {
-                    color: var(--color-black);
+                    color: var(--color-white);
                     font-weight: 600;
                     font-size: 1.2rem;
                     transition: 0.3s all;
@@ -248,6 +369,7 @@ header {
                     }
                     @include breakpoint(xl) {
                         font-size: 1.1rem;
+                        color: var(--color-black);
                     }
 
                     &.active {
@@ -279,17 +401,28 @@ header {
             }
         }
     }
+    .btn-check:checked + .btn,
+    .btn.active,
+    .btn.show,
+    .btn:first-child:active,
+    :not(.btn-check) + .btn:active {
+        color: var(--color-white) !important;
+    }
+    button {
+        border: none;
+        background-color: transparent;
+    }
     .lang-area {
         margin-left: 1rem;
         a {
-            color: var(--color-black);
+            color: var(--color-white);
             font-size: 1rem;
             font-weight: 500;
             display: flex;
             border: none;
         }
         .btn {
-            color: var(--color-black);
+            color: var(--color-white);
             font-size: 1.1rem !important;
             font-weight: 500;
             display: flex;

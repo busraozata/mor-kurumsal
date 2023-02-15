@@ -30,18 +30,21 @@
         }
     }
     .right-area {
-       /*  padding-left: 8rem;
+        padding-left: 3rem;
         @media screen and (max-width:1440px) {
-            padding-left: 3rem;
-        } */
+            padding-left: 1rem;
+        }
        
         @include breakpoint(lg) {
            padding-left: 1rem;
            margin-top: 2rem;
         }
+        .about-content{
+         /*    padding-top: 3rem; */
+        }
         h3 {
             margin-top: 0;
-            margin-bottom: 1.3rem;
+            margin-bottom: 1.7rem;
             font-size: 2.5rem;
             font-weight: 700;
             text-align: left;
@@ -70,25 +73,30 @@
             span {
                 font-weight: 700;
                 display: block;
-                max-width: 30rem;
-                margin-bottom: 0.5rem;
+                margin-bottom: 1.3rem;
                 @include breakpoint(xl) {
                     font-size: 0.9rem;
                 }
             }
             display: -webkit-box;
             overflow: hidden;
-            -webkit-line-clamp: 8;
+            -webkit-line-clamp: 12;
             -webkit-box-orient: vertical;
+        }
+        .link-div{
+            margin-top: 1rem;
+        }
+        .btn-link{
+            font-size: 1.1rem;
         }
         .btn {
             padding-left: 0rem;
             color: var(--color-purple);
-            font-size: 0.9rem;
+            font-size: 1.2rem !important;
             display: flex;
             align-items: center;
             border: none !important;
-
+            
             &:hover {
                 svg {
                     margin-left: 1rem;

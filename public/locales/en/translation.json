@@ -1,0 +1,168 @@
+{
+  "banner": [
+    {
+      "title": "Development Planning Solution",
+      "content": "With this system, which works fully integrated with Mor Corporate Consulting, we enable the development process of an employee in priority development areas (competencies, skills, etc.) to be individually planned and the most appropriate development solutions to be mapped to the needs here.",
+      "img": "/img/businessman-showing-changes-report.png"
+    }
+  ],
+  "solutions": [
+    {
+      "id": "1",
+      "title": "Goal Setting",
+      "icon": "/img/aim.png",
+      "desc": "What competencies should I focus on to develop?"
+    },
+    {
+      "id": "2",
+      "title": "Leveling",
+      "icon": "/img/next-level.png",
+      "desc": "What is and should be my maturity level in a competency I am focused on?"
+    },
+    {
+      "id": "3",
+      "title": "Development Support",
+      "icon": "/img/development.png",
+      "desc": "What development actions will I take to achieve this goal?"
+    },
+    {
+      "id": "4",
+      "title": "Choosing from Supporting Activities",
+      "icon": "/img/activity.png",
+      "desc": "Which trainings will I receive from Mor Corporate?"
+    },
+    {
+      "id": "5",
+      "title": "Regular Evaluations",
+      "icon": "/img/check-list.png",
+      "desc": "How much progress have I made?"
+    }
+  ],
+  "about": {
+    "title": "About Us",
+    "titleTwo": "Purple Corporate Website Launched!",
+    "smallTitle": "All details about 7000+ Turkish digital content are now on the Mor Corporate website!",
+    "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    "buttonPath": "/about",
+    "buttonTitle": "More information",
+    "image": "/img/close-up-businessman-with-digital-tablet.jpg"
+  },
+  "news": [
+    {
+      "id": "1",
+      "time": "2018-04-23T00:00:00Z",
+      "smallImg": "/img/small4.jpg",
+      "img": "/img/workplace-with-coffee-cup-laptop.jpg",
+      "title": "Video Sharing and Renewed List Pages in Mor Corporate",
+      "smallContent": "As Mor Corporate, we are happy to receive our ISO 10002 Customer Satisfaction Certificate by signing one of the firsts of our sector!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Read More",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍We Made it Easy for Education Managers to Share Videos in Social Groups",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍We Designed a Better Experience for List Pages Within the Platform",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "time": "2018-02-12T00:00:00Z",
+      "smallImg": "/img/small3.jpg",
+      "img": "/img/freelancer-working-outdoors.jpg",
+      "title": "Software and Programming Trainings are at Mor Corporate!",
+      "smallContent": "Software and programming trainings prepared with expert trainers of TTGV and Kampüs365 are in Enocta Catalog!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Read More"
+    },
+    {
+      "id": "3",
+      "time": "2018-01-18T00:00:00Z",
+      "smallImg": "/img/small2.jpg",
+      "img": "/img/aerial-view-man-using-computer-laptop-wooden-table.jpg",
+      "title": "Mor Corporate Platform Analytics Management Pages Have Been Renewed!",
+      "smallContent": "You can experience Purple Platform Analytics Management pages with its new face and details, thanks to the EP update that went live in all our cloud customers.",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Read More",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍We Made it Easy for Education Managers to Share Videos in Social Groups",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍We Designed a Better Experience for List Pages Within the Platform",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "time": "2023-09-18T00:00:00Z",
+      "smallImg": "/img/small.jpg",
+      "img": "/img/12189.jpg",
+      "title": "New Trainings Added to the Purple Corporate Catalog in November",
+      "smallContent": "November trainings are in the Enocta Catalog, which is enriched day by day with innovations!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Read More",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍We Made it Easy for Education Managers to Share Videos in Social Groups",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍We Designed a Better Experience for List Pages Within the Platform",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+        }
+      ]
+    }
+  ],
+  "weUs": {
+    "title": "A pleasant learning environment that gets to know you and you can't leave: Mor Corporate",
+    "weUs": [
+      {
+        "id": "1",
+        "year": "20+",
+        "title": "years of experience",
+        "img": "/img/1icons.svg"
+      },
+      {
+        "id": "2",
+        "year": "500+",
+        "title": "customer",
+        "img": "/img/2icons.svg"
+      },
+      {
+        "id": "3",
+        "year": "3 Million+",
+        "title": "Active User",
+        "img": "/img/3icons.svg"
+      },
+      {
+        "id": "4",
+        "title": "Turkey's FIRST and most widespread Learning Experience Platform",
+        "img": "/img/4icons.svg"
+      }
+    ]
+  }
+}

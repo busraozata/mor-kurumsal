@@ -13,7 +13,7 @@ export default function HeadTitle(props) {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="sub-banner d-flex align-items-center justify-content-center"
+      className="sub-banner d-flex align-items-end justify-content-center"
     >
       <div className="container">
         <div className="row">

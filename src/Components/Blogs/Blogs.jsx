@@ -2,13 +2,15 @@ import React from 'react'
 import HeadTitle from '../../Common/HeadTitle/HeadTitle';
 import Widget from '../../Layouts/Widgets/Widget';
 import "./Blogs.scss"
-import dummyNews from '../../API/dummyNews';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import Btn from '../../UI/Btn/Btn';
-
+import { useTranslation } from "react-i18next";
 export default function Blogs() {
+    const { t, i18n, ready } = useTranslation();
+    if (!ready) return 'loading translations...';
+
+    const news = t('news', { returnObjects: true });
     return (
         <>
             <HeadTitle
@@ -20,7 +22,7 @@ export default function Blogs() {
                     <div className="row">
                         <div className="col-lg-8 col-md-12">
                             <div className="row">
-                                {dummyNews.news?.map((item, index) => {
+                                {news.map((item, index) => {
                                     const date = moment(item.time).format('DD MMM YYYY');
                                     console.log(date);
                                     /* let [first, last, ...child] = serviceItem.title.split(" "); */
@@ -31,7 +33,7 @@ export default function Blogs() {
                                             <div className="card">
                                                 <div className="top">
                                                     <div className="img-wrapper">
-                                                        <Link to={`/blog/${item.title}`} ><img src={item.img} className='img-fluid' alt={item.title} /></Link>
+                                                        <Link to={`/blog/${item.id}`} ><img src={item.img} className='img-fluid' alt={item.title} /></Link>
                                                     </div>
                                                 </div>
                                                 <div className="body">
@@ -42,14 +44,14 @@ export default function Blogs() {
                                                             <span className='text-white'>{last}</span>
                                                         </div>
                                                         <div>
-                                                            <Link to={`/blog/${item.title}`}> <h6>{item.title}</h6></Link>
+                                                            <Link to={`/blog/${item.id}`}> <h6>{item.title}</h6></Link>
 
                                                         </div>
                                                     </div>
                                                     <p>{item.smallContent}</p>
                                                     {/* <Link to={`/blog/${item.title}`} className='btn'>{item.buttonTitle}  <HiOutlineArrowNarrowRight /></Link> */}
                                                     <div className='link-div'>
-                                                        <Btn link={`/blog/${item.title}}`} title="Devamını Oku..." />
+                                                        <Btn link={`/blog/${item.id}}`} route={`/blog/${item.title}`} title={`${item.buttonTitle}`} />
                                                     </div>
                                                 </div>
                                             </div>

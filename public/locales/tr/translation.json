@@ -1,0 +1,168 @@
+{
+  "banner": [
+    {
+      "title": "Gelişim Planlama Çözümü",
+      "content": "Mor Kurumsal Danışmanlık ile tam entegre çalışan bu sistemle, bir çalışan için öncelikli gelişim alanlarında (yetkinlikler, beceriler vb.) gelişim sürecinin bireysel olarak planlanmasına ve buradaki ihtiyaçlara en uygun gelişim çözümlerinin haritalanmasına olanak veriyoruz.",
+      "img": "/img/businessman-showing-changes-report.png"
+    }
+  ],
+  "solutions": [
+    {
+      "id": "1",
+      "title": "Hedef Belirleme",
+      "icon": "/img/aim.png",
+      "desc": "Geliştirmek için hangi yetkinliklere odaklanmalıyım?"
+    },
+    {
+      "id": "2",
+      "title": "Seviye Belirleme",
+      "icon": "/img/next-level.png",
+      "desc": "Odaklandığım bir yetkinlikteki olgunluk seviyem ne ve ne olmalı?"
+    },
+    {
+      "id": "3",
+      "title": "Gelişim Desteği",
+      "icon": "/img/development.png",
+      "desc": "Bu hedefe ulaşmak için hangi gelişim aksiyonlarını alacağım?"
+    },
+    {
+      "id": "4",
+      "title": "Destekleyici Faaliyetlerden Seçme",
+      "icon": "/img/activity.png",
+      "desc": "Mor Kurumsal'dan hangi eğitimleri alacağım?"
+    },
+    {
+      "id": "5",
+      "title": "Düzenli Değerlendirmeler",
+      "icon": "/img/check-list.png",
+      "desc": "Ne kadar gelişim sağladım?"
+    }
+  ],
+  "about": {
+    "title": "Hakkımızda",
+    "titleTwo": "Mor Kurumsal Web Sitesi Açıldı!",
+    "smallTitle": "7000+ Türkçe dijital içerikle ilgili tüm detaylar artık Mor Kurumsal web sitesinde!",
+    "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    "buttonPath": "/about",
+    "buttonTitle": "Detaylı Bilgi",
+    "image": "/img/close-up-businessman-with-digital-tablet.jpg"
+  },
+  "news": [
+    {
+      "id": "1",
+      "time": "2018-04-23T00:00:00Z",
+      "smallImg": "/img/small4.jpg",
+      "img": "/img/workplace-with-coffee-cup-laptop.jpg",
+      "title": "Mor Kurumsal’da Video Paylaşımı ve Yenilenen Liste Sayfaları",
+      "smallContent": "Mor Kurumsal olarak sektörümüzün ilklerinden birine daha imza atarak ISO 10002 Müşteri Memnuniyeti Sertifikamızı almanın mutluluğunu yaşıyoruz!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Devamını Oku",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍Sosyal Gruplarda Eğitim Yöneticilerinin Video Paylaşımlarını Kolaylaştırdık",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍Platform İçinde Yer Alan Liste Sayfaları İçin Daha İyi Bir Deneyim Tasarladık",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍Bunlar yanında rapor sayfalarında, anket listelemede, etkinlik detay sayfalarında, sözlük kullanımında bir çok yenilik ve geliştirme, bu ay da Mor Kurumsal Platform kullanıcıları ile buluştu."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "time": "2018-02-12T00:00:00Z",
+      "smallImg": "/img/small3.jpg",
+      "img": "/img/freelancer-working-outdoors.jpg",
+      "title": "Yazılım ve Programlama Eğitimleri Mor Kurumsal'da!",
+      "smallContent": "TTGV ve Kampüs365'in alanında uzman eğitmenleriyle hazırlanan, yazılım ve programlama eğitimleri Enocta Katalog'da!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Devamını Oku"
+    },
+    {
+      "id": "3",
+      "time": "2018-01-18T00:00:00Z",
+      "smallImg": "/img/small2.jpg",
+      "img": "/img/aerial-view-man-using-computer-laptop-wooden-table.jpg",
+      "title": "Mor Kurumsal Platform Analitik Yönetimi Sayfaları Yenilendi!",
+      "smallContent": "Tüm bulut müşterilerimizde canlıya alınan EP güncellemesi sayesinde Enocta Platform Analitik Yönetimi sayfalarını yeni yüzüyle ve detaylarıyla deneyimleyebilirsiniz.",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Devamını Oku",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍Sosyal Gruplarda Eğitim Yöneticilerinin Video Paylaşımlarını Kolaylaştırdık",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍Platform İçinde Yer Alan Liste Sayfaları İçin Daha İyi Bir Deneyim Tasarladık",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍Bunlar yanında rapor sayfalarında, anket listelemede, etkinlik detay sayfalarında, sözlük kullanımında bir çok yenilik ve geliştirme, bu ay da Mor Kurumsal Platform kullanıcıları ile buluştu."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "time": "2023-09-18T00:00:00Z",
+      "smallImg": "/img/small.jpg",
+      "img": "/img/12189.jpg",
+      "title": "Kasım Ayında Mor Kurumsal Katalog'a Eklenen Yeni Eğitimler",
+      "smallContent": "Kasım ayı eğitimleri, yeniliklerle günden güne zenginleşen Enocta Katalog'da!",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
+      "buttonTitle": "Devamını Oku",
+      "materials": [
+        {
+          "id": "1",
+          "title": "‍Sosyal Gruplarda Eğitim Yöneticilerinin Video Paylaşımlarını Kolaylaştırdık",
+          "content": "Eğitim yöneticilerinin daha önceden sisteme tanımladıkları videoları Sosyal gruplarda ve platformdaki tüm yorum alanlarında kolayca paylaşabilmesini sağladık."
+        },
+        {
+          "id": "2",
+          "title": "‍‍Platform İçinde Yer Alan Liste Sayfaları İçin Daha İyi Bir Deneyim Tasarladık",
+          "content": "Gerek eğitim yöneticileri, gerekse son kullanıcıların gördüğü listeleme sayfalarının sayfa içerisine yayılarak daha geniş bir alanda ve daha iyi bir görsel deneyimle görüntülenmesini sağladık. Örneğin eğitim yöneticileri için etkinlik listeleri, son kullanıcılar için eğitim geçmişi sayfaları bu düzenleme ile yepyeni bir görünüme kavuştu."
+        },
+        {
+          "id": "3",
+          "title": "‍Bunlar yanında rapor sayfalarında, anket listelemede, etkinlik detay sayfalarında, sözlük kullanımında bir çok yenilik ve geliştirme, bu ay da Mor Kurumsal Platform kullanıcıları ile buluştu."
+        }
+      ]
+    }
+  ],
+  "weUs": {
+    "title": "Sizi tanıyan, ayrılamayacağınız, keyifli bir öğrenme ortamı: Mor Kurumsal",
+    "weUs": [
+      {
+        "id": "1",
+        "year": "20+",
+        "title": "yıl deneyim",
+        "img": "/img/1icons.svg"
+      },
+      {
+        "id": "2",
+        "year": "500+",
+        "title": "müşteri",
+        "img": "/img/2icons.svg"
+      },
+      {
+        "id": "3",
+        "year": "3 Milyon+",
+        "title": "Aktif Kullanıcı",
+        "img": "/img/3icons.svg"
+      },
+      {
+        "id": "4",
+        "title": "Türkiye’nin İLK ve en yaygın Öğrenme Deneyimi Platformu",
+        "img": "/img/4icons.svg"
+      }
+    ]
+  }
+}

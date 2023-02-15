@@ -1,7 +1,14 @@
 import React from 'react'
 import "./OurSolitions.scss"
 import dummyOurSolutions from '../../../API/dummyOurSolitions'
+import { useTranslation } from "react-i18next";
+
 export default function OurSolitions() {
+    const { t, i18n, ready } = useTranslation();
+
+    if (!ready) return 'loading translations...';
+
+    const Solutiouns = t('Solutiouns', { returnObjects: true });
     return (
         <>
         {/* <section className="solutions" id='solutions'>

@@ -1,15 +1,19 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import dummyNews from '../../API/dummyNews';
 // Import Swiper styles
 import "swiper/css";
 import { Link } from 'react-router-dom';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { Autoplay } from "swiper";
 import "./Widgets.scss"
-import Moment from 'react-moment';
 import moment from 'moment';
+import { useTranslation } from "react-i18next";
+
 export default function Widget() {
+    const { t, i18n, ready } = useTranslation();
+    if (!ready) return 'loading translations...';
+
+    const news = t('news', { returnObjects: true });
     return (
         <div className="widgets">
             <div className="last-blogs">
@@ -37,14 +41,14 @@ export default function Widget() {
                         },
                     }}
                 >
-                    {dummyNews.news?.map((item, index) => {
+                    {news.map((item, index) => {
                         const date = moment(item.time).format('DD MMM YYYY');
                         return (
                             <SwiperSlide key={index}>
                                 <div className="row">
                                     <div className="col-lg-5">
                                         <div className="img-wrapper">
-                                            <Link to={`/blog/${item.title}`}>
+                                            <Link to={`/blog/${item.id}`}>
                                                 <img src={item.smallImg} className='img-fluid' alt={item.title} />
                                             </Link>
                                             
@@ -54,8 +58,8 @@ export default function Widget() {
                                     </div>
                                     <div className="col-lg-7">
                                         <span>{date}</span>
-                                        <Link to={`/blog/${item.title}`}> <h6>{item.title}</h6></Link>
-                                        <Link to={`/blog/${item.title}`} className='btn'>{item.buttonTitle}  <HiOutlineArrowNarrowRight /></Link>
+                                        <Link to={`/blog/${item.id}`}> <h6>{item.title}</h6></Link>
+                                        <Link to={`/blog/${item.id}`} className='btn'>{item.buttonTitle}  <HiOutlineArrowNarrowRight /></Link>
                                     </div>
 
                                 </div>

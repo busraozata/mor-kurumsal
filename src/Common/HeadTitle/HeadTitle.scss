@@ -3,9 +3,10 @@
 .sub-banner {
     position: relative;
     z-index: 1;
-    min-height: 25vh;
+    min-height: 45vh;
     width: 100%;
     padding: 1rem;
+    padding-bottom: 2rem;
 
     &:before {
         content: "";
@@ -15,6 +16,7 @@
         display: block;
         position: absolute;
         z-index: -1;
+        bottom: 0;
     }
 
     h1 {

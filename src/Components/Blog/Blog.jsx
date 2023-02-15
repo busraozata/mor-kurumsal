@@ -6,7 +6,7 @@ import HeadTitle from '../../Common/HeadTitle/HeadTitle';
 import Moment from 'react-moment';
 import moment from 'moment';
 export default function Blog({ blogs }) {
-    let { title } = useParams();
+    let { id } = useParams();
     console.log(blogs, "test");
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -25,7 +25,7 @@ export default function Blog({ blogs }) {
             <section className='blog-page'>
                 <div className="container">
                     {
-                        blogs.filter((item) => item.title === title).map((item, index) => {
+                        blogs.filter((item) => item.id === id).map((item, index) => {
                             const date = moment(item.time).format('DD MMM YYYY');
                             return (
                                 

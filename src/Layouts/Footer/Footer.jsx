@@ -6,7 +6,13 @@ import { AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube } from "react-icons
 import { FaFacebookF } from "react-icons/fa";
 import dummyNews from '../../API/dummyNews';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+    const { t, i18n, ready } = useTranslation();
+    if (!ready) return 'loading translations...';
+
+    const news = t('news', { returnObjects: true });
     return (
         <footer className='footer'>
             <div className="container">
@@ -77,11 +83,11 @@ export default function Footer() {
                     <div className="col-lg-5 right-area">
                         <div className="right-content">
                             <h3>MOR KURUMSAL BLOG</h3>
-                            {dummyNews.news?.map((item, index) => {
+                            {news.map((item, index) => {
                                 return (
                                     index < 2 && (
                                         <div className="blog" key={index}>
-                                            <Link to={`/blog/${item.title}`}><h5>{item.title}</h5></Link>
+                                            <Link to={`/blog/${item.id}`}><h5>{item.title}</h5></Link>
                                             <span>09/01/2023</span>
                                         </div>
                                     )

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import "./AboutSection.scss"
 import dummyAbout from '../../API/dummyAbout'
-import { Link } from 'react-router-dom'
 import HeadTitle from '../../Common/HeadTitle/HeadTitle'
 import AboutNews from './AboutNews/AboutNews'
 export default function AboutSection() {
