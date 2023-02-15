@@ -25,13 +25,9 @@
         }
     }
     .right-area {
-        padding-left: 3rem;
-        @media screen and (max-width:1440px) {
-            padding-left: 3rem;
-        }
+       
        
         @include breakpoint(lg) {
-           padding-left: 1rem;
            margin-top: 2rem;
         }
         h3 {

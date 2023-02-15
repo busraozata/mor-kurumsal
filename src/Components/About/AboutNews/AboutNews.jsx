@@ -9,7 +9,13 @@ import { Link } from 'react-router-dom';
 import Contact from '../../Home/Contact/Contact';
 import { Autoplay} from "swiper";
 import moment from 'moment';
+import { useTranslation } from "react-i18next";
+
 export default function AboutNews() {
+    const { t, i18n, ready } = useTranslation();
+    if (!ready) return 'loading translations...';
+
+    const news = t('news', { returnObjects: true });
     return (
         <>
             <section className='aboutNews'>
@@ -51,13 +57,13 @@ export default function AboutNews() {
                                 loop={true}
                                 className="mySwiper"
                             >
-                                {dummyNews.news?.map((item, index) => {
+                                {news.map((item, index) => {
                                     const date = moment(item.time).format('DD MMM YYYY');
                                     return (
                                         <SwiperSlide key={index}>
                                             <div className="box">
                                                 <span>{date}</span>
-                                                <Link to={`/blog/${item.title}`}> <h6>{item.title}</h6></Link>
+                                                <Link to={`/blog/${item.id}`}> <h6>{item.title}</h6></Link>
                                                 <p>{item.smallContent.substring(0, 140)}...</p>
 
                                             </div>

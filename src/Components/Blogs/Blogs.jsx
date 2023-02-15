@@ -51,7 +51,7 @@ export default function Blogs() {
                                                     <p>{item.smallContent}</p>
                                                     {/* <Link to={`/blog/${item.title}`} className='btn'>{item.buttonTitle}  <HiOutlineArrowNarrowRight /></Link> */}
                                                     <div className='link-div'>
-                                                        <Btn link={`/blog/${item.id}}`} route={`/blog/${item.title}`} title={`${item.buttonTitle}`} />
+                                                        <Btn  route={`/blog/${item.id}`} title={`${item.buttonTitle}`} />
                                                     </div>
                                                 </div>
                                             </div>

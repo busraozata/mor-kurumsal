@@ -12,6 +12,7 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false); //Header scroll
     const [active, setActive] = useState(-1); //Active , Pasive
     const [menuOpen, setMenuOpen] = useState(false); //Menu open, close
+    const [flag, setFlag] = useState("tr");
     window.onscroll = () => {
         setIsScrolled(window.pageYOffset === 0 ? false : true);
         return () => (window.onscroll = null);
@@ -22,12 +23,11 @@ export default function Header() {
     };
 
     const handleMenuToggleTest = (lng) => {
+        setFlag(lng);
         i18n.changeLanguage(lng);
-        console.log(i18n.changeLanguage(lng),"dil");
     };
 
     return (
-
         <>
             <header className={`${isScrolled ? `sticky` : ``} `}>
                 <div className="top-header w-100">
@@ -79,26 +79,24 @@ export default function Header() {
                             </ul>
                             <div class="dropdown lang-area d-xl-none d-block">
                                 <button class="btn d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>TR</span> <img src="./img/tr.png" class="img-fluid" alt="" />
+                                    <span style={{textTransform:"uppercase"}}>{flag}</span> <img src={`./img/${flag}.png`} class="img-fluid" alt="" />
                                 </button>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a href="/"><span>TR</span><img src="./img/tr.png" class="img-fluid" alt="" /></a></li>
-                                    <li><a href="/"><span>ENG</span><img src="./img/eng.png" class="img-fluid" alt="" /></a></li>
-
-
+                                    <li><button onClick={() => handleMenuToggleTest("tr")}><span>TR</span><img src="./img/tr.png" class="img-fluid" alt="" /></button></li>
+                                    <li><button onClick={() => handleMenuToggleTest("en")}><span>EN</span><img src="./img/en.png" class="img-fluid" alt="" /></button></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="dropdown lang-area d-xl-block d-none">
                             <button class="btn d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>TR</span> <img src="./img/tr.png" class="img-fluid" alt="" />
+                                <span style={{textTransform:"uppercase"}}>{flag}</span> <img src={`./img/${flag}.png`} class="img-fluid" alt="" />
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><button onClick={() => handleMenuToggleTest("tr")}><span>TR</span><img src="./img/tr.png" class="img-fluid" alt="" /></button></li>
-                                <li><button onClick={() => handleMenuToggleTest("en")}><span>EN</span><img src="./img/eng.png" class="img-fluid" alt="" /></button></li>
+                                <li><button onClick={() => handleMenuToggleTest("en")}><span>EN</span><img src="./img/en.png" class="img-fluid" alt="" /></button></li>
                             </ul>
                         </div>
 
