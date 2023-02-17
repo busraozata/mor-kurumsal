@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "./AboutNews.scss"
+/* import "./AboutNews.scss" */
 import { Link } from 'react-router-dom';
 import Contact from '../../Home/Contact/Contact';
 import { Autoplay} from "swiper";
