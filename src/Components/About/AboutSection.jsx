@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "./AboutSection.scss"
+/* import "./AboutSection.scss" */
 import HeadTitle from '../../Common/HeadTitle/HeadTitle'
 import AboutNews from './AboutNews/AboutNews'
 import { useTranslation } from "react-i18next";
