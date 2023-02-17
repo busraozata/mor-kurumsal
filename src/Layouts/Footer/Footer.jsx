@@ -4,12 +4,11 @@ import "./Footer.scss"
 import { RiLinkedinFill } from 'react-icons/ri';
 import { AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
-import dummyNews from '../../API/dummyNews';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
-    const { t, i18n, ready } = useTranslation();
+    const { t, ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const news = t('news', { returnObjects: true });
@@ -82,7 +81,7 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-5 right-area">
                         <div className="right-content">
-                            <h3>MOR KURUMSAL BLOG</h3>
+                            <h3>{t("footerTitle")}</h3>
                             {news.map((item, index) => {
                                 return (
                                     index < 2 && (
@@ -97,7 +96,7 @@ export default function Footer() {
 
                            {/*  <a href="/#" className='btn'>Tüm İçerikler</a> */}
                             <div className="social-media">
-                                <span>BİZİ TAKİP EDİN</span>
+                                <span>{t("followUs")}</span>
                                 <ul className='d-flex align-items-center'>
                                     <li><a href="#"><RiLinkedinFill /></a></li>
                                     <li><a href="#"><AiOutlineTwitter /></a></li>

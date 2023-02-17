@@ -8,9 +8,8 @@ import "./Header.scss"
 
 export default function Header() {
 
-    const { t, i18n, ready } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false); //Header scroll
-    const [active, setActive] = useState(-1); //Active , Pasive
     const [menuOpen, setMenuOpen] = useState(false); //Menu open, close
     const [flag, setFlag] = useState("tr");
     window.onscroll = () => {
@@ -70,12 +69,12 @@ export default function Header() {
                         <div
                             className={`navigation ${menuOpen ? "active" : ""}`} >
                             <ul className="menu-area d-flex justify-content-center align-items-center">
-                                <li className="nav-item"><a href="/" className="nav-link">Ana Sayfa</a></li>
-                                <li className="nav-item"><Link to="about" className="nav-link">Kurumsal</Link></li>
-                                <li className="nav-item"><Link to="news" className="nav-link">Haberler</Link></li>
-                                <li className="nav-item"><Link to="referances" className="nav-link">Referanslar</Link></li>
-                                <li className="nav-item"><a href="/blogs" className="nav-link">Blog</a></li>
-                                <li className="nav-item"><Link to="contact" className="nav-link"> İletişim</Link></li>
+                                <li className="nav-item"><a href="/" className="nav-link">{t("homePage")}</a></li>
+                                <li className="nav-item"><Link to="about" className="nav-link">{t("corparateTitle")}</Link></li>
+                                <li className="nav-item"><Link to="news" className="nav-link">{t("newsTitle")}</Link></li>
+                                <li className="nav-item"><Link to="referances" className="nav-link">{t("referances")}</Link></li>
+                                <li className="nav-item"><a href="/blogs" className="nav-link">{t("blog")}</a></li>
+                                <li className="nav-item"><Link to="contact" className="nav-link">{t("contact")}</Link></li>
                             </ul>
                             <div class="dropdown lang-area d-xl-none d-block">
                                 <button class="btn d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

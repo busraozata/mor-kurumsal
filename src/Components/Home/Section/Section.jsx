@@ -1,10 +1,9 @@
 import React from 'react'
 import "./Section.scss"
-import dummyWeUs from '../../../API/dummyWeUs'
 import { useTranslation } from "react-i18next";
 
 export default function Section() {
-    const { t, i18n, ready } = useTranslation();
+    const { t,  ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const weUs = t('weUs', { returnObjects: true });

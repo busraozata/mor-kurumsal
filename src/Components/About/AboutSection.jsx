@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import "./AboutSection.scss"
-import dummyAbout from '../../API/dummyAbout'
 import HeadTitle from '../../Common/HeadTitle/HeadTitle'
 import AboutNews from './AboutNews/AboutNews'
 import { useTranslation } from "react-i18next";
@@ -15,7 +14,7 @@ export default function AboutSection() {
     return (
         <>
             <HeadTitle
-                title="Hakkımızda"
+                title={t("about.title")}
                 image="/img/close-up-businessman-with-digital-tablet.jpg"
             />
             <section className='about-page' id='about'>
@@ -39,7 +38,7 @@ export default function AboutSection() {
 
                             </div>
                         </div>
-                        <div className="col-lg-12 mt-5">
+                        <div className="col-lg-12 mt-xl-5">
                             <p> {t("about.bigText")}</p>
                         </div>
                     </div>

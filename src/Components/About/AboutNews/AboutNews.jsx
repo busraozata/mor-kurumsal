@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "./AboutNews.scss"
-import dummyNews from '../../../API/dummyNews';
 import { Link } from 'react-router-dom';
 import Contact from '../../Home/Contact/Contact';
 import { Autoplay} from "swiper";
@@ -12,7 +11,7 @@ import moment from 'moment';
 import { useTranslation } from "react-i18next";
 
 export default function AboutNews() {
-    const { t, i18n, ready } = useTranslation();
+    const { t, ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const news = t('news', { returnObjects: true });
@@ -22,8 +21,8 @@ export default function AboutNews() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4">
-                            <h2>Mor Kurumsal’da Neler Oluyor?</h2>
-                            <p className='text'>Mor Kurumsal ile ilgili güncel haberlere buradan ulaşabilirsiniz.</p>
+                            <h2>{t("blogTitle")}</h2>
+                            <p className='text'>{t("blogText")}</p>
                         </div>
                         <div className="col-lg-8">
                             <Swiper

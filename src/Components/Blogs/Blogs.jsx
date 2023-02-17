@@ -7,14 +7,14 @@ import moment from 'moment';
 import Btn from '../../UI/Btn/Btn';
 import { useTranslation } from "react-i18next";
 export default function Blogs() {
-    const { t, i18n, ready } = useTranslation();
+    const { t,  ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const news = t('news', { returnObjects: true });
     return (
         <>
             <HeadTitle
-                title="Blog"
+                title={t("blog")}
                 image="/img/close-up-businessman-with-digital-tablet.jpg"
             />
             <section className='blogs'>

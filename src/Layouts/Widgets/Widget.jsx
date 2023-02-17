@@ -10,14 +10,14 @@ import moment from 'moment';
 import { useTranslation } from "react-i18next";
 
 export default function Widget() {
-    const { t, i18n, ready } = useTranslation();
+    const { t, ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const news = t('news', { returnObjects: true });
     return (
         <div className="widgets">
             <div className="last-blogs">
-                <h3>Benzer Yenilikler</h3>
+                <h3>{t("innovations")}</h3>
                 <Swiper
                     direction={"vertical"}
                     autoplay={{
@@ -51,7 +51,7 @@ export default function Widget() {
                                             <Link to={`/blog/${item.id}`}>
                                                 <img src={item.smallImg} className='img-fluid' alt={item.title} />
                                             </Link>
-                                            
+
 
                                         </div>
 
@@ -70,36 +70,36 @@ export default function Widget() {
 
             </div>
             <div className="form">
-                <h3>İletişimde Kalın!</h3>
-                <p>En yeni haber yazılarımızı anında okumak için iletişim bilgilerinizi bizimle paylaşın.
+                <h3>{t("blogContactTitle")}</h3>
+                <p>{t("blogContactText")}
                 </p>
                 <form action="">
                     <div className="form-area">
                         <div className="row">
                             <div className="col-lg-12 mb-3">
                                 <div className="form-group">
-                                    <input type="text" className='form-control' placeholder='Adınız Soyadınız' />
+                                    <input type="text" className='form-control' placeholder={t("fullName")} />
                                 </div>
                             </div>
 
                             <div className="col-lg-12 mb-3">
                                 <div className="form-group">
-                                    <input type="text" className='form-control' placeholder='E-Posta Adresiniz' />
+                                    <input type="text" className='form-control' placeholder={t("email")} />
                                 </div>
                             </div>
                             <div className="col-lg-12 mb-3">
                                 <div className="form-group">
-                                    <input type="text" className='form-control' placeholder='Kurum Adı' />
+                                    <input type="text" className='form-control' placeholder={t("corparate")} />
                                 </div>
                             </div>
                             <div className="col-lg-12 mb-3">
                                 <div className="form-group">
-                                    <input type="text" className='form-control' placeholder='Telefon Numaranız' />
+                                    <input type="text" className='form-control' placeholder={t("phone")} />
                                 </div>
                             </div>
 
                             <div className="col-lg-12">
-                                <button className='btn'>Gönder</button>
+                                <button className='btn'>{t("button")}</button>
                             </div>
                         </div>
                     </div>

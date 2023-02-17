@@ -39,9 +39,7 @@
            padding-left: 1rem;
            margin-top: 2rem;
         }
-        .about-content{
-         /*    padding-top: 3rem; */
-        }
+       
         h3 {
             margin-top: 0;
             margin-bottom: 1.7rem;
@@ -87,7 +85,11 @@
             margin-top: 1rem;
         }
         .btn-link{
-            font-size: 1.1rem;
+            font-size: 1rem;
+            @include breakpoint(lg){
+                font-size: 0.7rem;
+                padding: 0.2rem 10px;
+            }
         }
         .btn {
             padding-left: 0rem;
@@ -96,6 +98,7 @@
             display: flex;
             align-items: center;
             border: none !important;
+          
             
             &:hover {
                 svg {

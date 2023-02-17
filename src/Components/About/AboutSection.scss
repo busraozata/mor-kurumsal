@@ -1,8 +1,8 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixin.scss";
-.about-page{
-    .about-content{
-        p{
+.about-page {
+    .about-content {
+        p {
             -webkit-line-clamp: inherit !important;
         }
     }
@@ -24,11 +24,19 @@
             background-color: var(--color-purple);
         }
     }
-    .right-area {
-       
-       
+    p {
+        color: var(--color-black);
+        font-weight: 300;
+        @include breakpoint(xl) {
+            font-size: 0.9rem;
+        }
         @include breakpoint(lg) {
-           margin-top: 2rem;
+            font-size: 0.8rem;
+        }
+    }
+    .right-area {
+        @include breakpoint(lg) {
+            margin-top: 2rem;
         }
         h3 {
             margin-top: 0;
@@ -38,7 +46,7 @@
             text-align: left;
             position: relative;
             color: var(--color-purple);
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 font-size: 1.5rem;
             }
             @include breakpoint(xl) {

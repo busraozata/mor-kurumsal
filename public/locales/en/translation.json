@@ -1,4 +1,30 @@
 {
+  "newsTitle":"News",
+  "newsText":"You can reach the latest news about Mor Corporate, the latest developments, usage and our business partners here.",
+  "ourCustomersTitle":"Our Customers",
+  "ourCustomersText":"Some of the institutions in different sectors that prefer Mor Corporate products and solutions in the development of their employees",
+  "footerTitle":"Mor Corporate Blog",
+  "followUs":"FOLLOW US",
+  "blogTitle":"What's Happening at Mor Corporate?",
+  "blogText":"You can find the latest news about Mor Corporate here.",
+  "innovations":"Similar Innovations",
+  "formTitle":"Benefit From Our Development Planning Solution Now",
+  "formText":"Contact us for detailed information.",
+  "name":"Your Name",
+  "fullName":"Full Name",
+  "surname":"Your Surname",
+  "email":"E-Mail Address",
+  "corparate":"Company Name",
+  "phone":"Your Phone Number",
+  "approval":"Your personal data collected with this form may be processed by Mor Corporate within the framework of the User Clarification Text for the purpose of fulfilling the transactions regarding your request and sending promotional, bulletin and marketing contents via the contact address you have shared.",
+  "button":"Send",
+  "blogContactTitle":"Stay in touch!",
+  "blogContactText":"Share your contact information with us to read our latest news articles instantly.",
+  "blog":"Blog",
+  "homePage":"Homepage",
+  "corparateTitle":"Institutional",
+  "referances":"Referances",
+  "contact":"Contact",
   "banner": [
     {
       "title": "Development Planning Solution",
@@ -40,7 +66,7 @@
   ],
   "about": {
     "title": "About Us",
-    "titleTwo": "Purple Corporate Website Launched!",
+    "titleTwo": "Mor Corporate Website Launched!",
     "smallTitle": "All details about 7000+ Turkish digital content are now on the Mor Corporate website!",
     "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     "buttonPath": "/about",
@@ -71,7 +97,7 @@
         },
         {
           "id": "3",
-          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Mor Corporate Platform users this month."
         }
       ]
     },
@@ -91,7 +117,7 @@
       "smallImg": "/img/small2.jpg",
       "img": "/img/aerial-view-man-using-computer-laptop-wooden-table.jpg",
       "title": "Mor Corporate Platform Analytics Management Pages Have Been Renewed!",
-      "smallContent": "You can experience Purple Platform Analytics Management pages with its new face and details, thanks to the EP update that went live in all our cloud customers.",
+      "smallContent": "You can experience Mor Platform Analytics Management pages with its new face and details, thanks to the EP update that went live in all our cloud customers.",
       "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
       "buttonTitle": "Read More",
       "materials": [
@@ -107,7 +133,7 @@
         },
         {
           "id": "3",
-          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Mor Corporate Platform users this month."
         }
       ]
     },
@@ -116,7 +142,7 @@
       "time": "2023-09-18T00:00:00Z",
       "smallImg": "/img/small.jpg",
       "img": "/img/12189.jpg",
-      "title": "New Trainings Added to the Purple Corporate Catalog in November",
+      "title": "New Trainings Added to the Mor Corporate Catalog in November",
       "smallContent": "November trainings are in the Enocta Catalog, which is enriched day by day with innovations!",
       "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reprehenderit dolorem quae perspiciatis, mollitia iste officia quod doloribus neque, exercitationem a, voluptates iusto laborum! Quia rerum quibusdam aperiam aliquam dolorum pariatur ipsum natus illum a neque harum dolor reprehenderit perferendis alias, molestiae porro blanditiis nulla ratione consequatur, incidunt voluptate nesciunt!",
       "buttonTitle": "Read More",
@@ -133,7 +159,7 @@
         },
         {
           "id": "3",
-          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Purple Corporate Platform users this month."
+          "title": "‍In addition to these, many innovations and improvements in report pages, survey listing, event detail pages, and dictionary usage met with Mor Corporate Platform users this month."
         }
       ]
     }

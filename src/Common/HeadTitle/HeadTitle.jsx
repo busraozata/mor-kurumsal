@@ -3,7 +3,11 @@ import "./HeadTitle.scss";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai"
 /* useLocation */
+import { useTranslation } from "react-i18next";
+
 export default function HeadTitle(props) {
+  const { t } = useTranslation();
+
   /* const location = useLocation(); */
   return (
     <section
@@ -21,7 +25,7 @@ export default function HeadTitle(props) {
             {/* <h1>{location.pathname.replace("-", " ").split("/")[1]}</h1> */}
             <h1>{props.title}</h1>
             <div className="d-flex align-items-center justify-content-start">
-              <Link to="/">Ana Sayfa</Link>
+              <Link to="/">{t("homePage")}</Link>
               <AiOutlineRight />
               <Link to="#">
                 {/*   {location.pathname.replace("-", " ").split("/")[1]} */}

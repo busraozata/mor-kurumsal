@@ -1,49 +1,52 @@
 import React from 'react'
 import "./Contact.scss"
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+    const { t } = useTranslation();
     return (
         <section className='contact' id='contact'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 left-area">
-                        <h4>Gelişim Planlama Çözümümüzden Hemen Faydalanın</h4>
-                        <span>Detaylı bilgi almak için bize ulaşın.</span>
+                        <h4>{t("formTitle")}</h4>
+                        <span>{t("formText")}</span>
                         <form action="">
                             <div className="form-area">
                                 <div className="row">
                                     <div className="col-lg-6 mb-4">
                                         <div className="form-group">
-                                            <input type="text" className='form-control' placeholder='Adınız' />
+                                            <input type="text" className='form-control' placeholder={t("name")} />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 mb-4">
                                         <div className="form-group">
-                                            <input type="text" className='form-control' placeholder='Soyadınız' />
+                                            <input type="text" className='form-control' placeholder={t("surname")} />
                                         </div>
                                     </div>
                                     <div className="col-lg-12 mb-4">
                                         <div className="form-group">
-                                            <input type="text" className='form-control' placeholder='E-Posta Adresiniz' />
+                                            <input type="text" className='form-control' placeholder={t("email")}/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12 mb-4">
                                         <div className="form-group">
-                                            <input type="text" className='form-control' placeholder='Kurum Adı' />
+                                            <input type="text" className='form-control' placeholder={t("corparate")} />
                                         </div>
                                     </div>
                                     <div className="col-lg-12 mb-4">
                                         <div className="form-group">
-                                            <input type="text" className='form-control' placeholder='Telefon Numaranız' />
+                                            <input type="text" className='form-control' placeholder={t("phone")} />
                                         </div>
                                     </div>
                                     <div className="col-lg-12 mb-4">
                                     <div className="mb-3 form-check d-flex">
                                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                        <label className="form-check-label" htmlFor="exampleCheck1">Bu form ile toplanan kişisel verileriniz Enocta tarafından talebinize dair işlemlerin yerine getirilmesi ve paylaşmış olduğunuz iletişim adresi üzerinden tanıtım, bülten ve pazarlama içerikleri gönderilmesi amacıyla Kullanıcı Aydınlatma Metni çerçevesinde işlenebilecektir</label>
+                                        <label className="form-check-label" htmlFor="exampleCheck1">{t("approval")}</label>
                                     </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <button className='btn'>Gönder</button>
+                                        <button className='btn'>{t("button")}</button>
                                     </div>
                                 </div>
                             </div>

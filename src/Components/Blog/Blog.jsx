@@ -3,9 +3,11 @@ import "./Blog.scss"
 import { useParams } from 'react-router-dom';
 import Widget from '../../Layouts/Widgets/Widget';
 import HeadTitle from '../../Common/HeadTitle/HeadTitle';
-import Moment from 'react-moment';
 import moment from 'moment';
+import { useTranslation } from "react-i18next";
+
 export default function Blog({ blogs }) {
+    const { t } = useTranslation();
     let { id } = useParams();
     console.log(blogs, "test");
     useEffect(() => {
@@ -19,7 +21,7 @@ export default function Blog({ blogs }) {
     return (
         <>
             <HeadTitle
-                title="Blog"
+                title={t("blog")}
                 image="/img/close-up-businessman-with-digital-tablet.jpg"
             />
             <section className='blog-page'>

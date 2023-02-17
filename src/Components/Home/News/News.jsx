@@ -6,16 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import dummyNews from '../../../API/dummyNews';
 import { Link } from 'react-router-dom';
-import Moment from 'react-moment';
 import moment from 'moment';
 import Btn from '../../../UI/Btn/Btn';
 import { useTranslation } from "react-i18next";
 
 export default function News() {
-    const { t, i18n, ready } = useTranslation();
+    const { t, ready } = useTranslation();
     if (!ready) return 'loading translations...';
 
     const news = t('news', { returnObjects: true });
@@ -25,8 +22,8 @@ export default function News() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="title-area">
-                            <h2 className='title'>{dummyNews.title}</h2>
-                            <p>{dummyNews.content}</p>
+                            <h2 className='title'>{t("newsTitle")}</h2>
+                            <p>{t("newsText")}</p>
                         </div>
                     </div>
                     <div className="swiper-area" /* style={{paddingLeft:"20rem"}} */>
